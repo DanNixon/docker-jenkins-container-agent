@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv bash
+
+mkdir -p ${AGENT_WORKDIR}
+chown -R abc:abc ${AGENT_WORKDIR}

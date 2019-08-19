@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+# Set the containers docker group GID to match the hosts
+groupmod -g ${HOST_DOCKER_GID} docker
+usermod -aG docker abc
