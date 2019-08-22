@@ -13,8 +13,9 @@ RUN apt-get update && \
     apt-get update && \
     apt-get install -y docker-ce
 
-# Setup Jenkins slave
 ARG JENKINS_SLAVE_VERSION=3.26
+
+# Setup Jenkins slave
 RUN curl --create-dirs -sSLo '/usr/share/jenkins/slave.jar' \
       "https://repo.jenkins-ci.org/public/org/jenkins-ci/main/remoting/${JENKINS_SLAVE_VERSION}/remoting-${JENKINS_SLAVE_VERSION}.jar" && \
     chmod 755 '/usr/share/jenkins' && \
