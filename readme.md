@@ -1,5 +1,8 @@
 # Jenkins container agent
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/dannixon/jenkins-container-agent)](https://hub.docker.com/r/dannixon/jenkins-container-agent)
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/dannixon/jenkins-container-agent)](https://hub.docker.com/r/dannixon/jenkins-container-agent/builds)
+
 Jenkins agent running in a Docker container with access to the Docker daemon for starting containers within the build script.
 Not the best way to do this but was deemed good enough for a bodge.
 
